@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Travelling to Aadi Kailash — Name Tushar Selal</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Journey to the Hill — Guided cultural & pilgrimage tours around Dharchula, Pithoragarh, Almora & Aadi Kailash. Guide: Nam Tushar Selal." />
+
+  <style>
+    :root{
+      --bg:#faf7f0;
+      --card:#ffffff;
+      --accent:#b08b3b; /* gold */
+      --muted:#6b6b6b;
+      --dark:#111;
+      --radius:12px;
+      --maxw:1100px;
+    }
+
+    /* Reset / base */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg) 0%, #f3efe6 100%);
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+
+    /* Container */
+    .wrap{max-width:var(--maxw);margin:32px auto;padding:28px}
+
+    /* Header / nav */
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;
+    }
+    .logo{
+      width:72px;height:72px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg, rgba(176,139,59,0.12), rgba(176,139,59,0.04));
+      border:1px solid rgba(176,139,59,0.12);
+      font-family:"Merriweather",serif;font-weight:700;font-size:18px;color:var(--accent);
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    }
+    nav a{margin-left:12px;text-decoration:none;color:var(--muted);font-weight:600}
+    nav a.cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;margin-left:18px}
+
+    /* Hero */
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:stretch;background:var(--card);
+      padding:28px;border-radius:16px;box-shadow:0 10px 30px rgba(17,17,17,0.06);border:1px solid rgba(0,0,0,0.03);
+    }
+    .hero-left h1{font-family:"Merriweather",serif;font-weight:700;font-size:40px;margin:0 0 8px;color:var(--dark)}
+    .lead{color:var(--muted);margin-bottom:18px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap}
+    .badge{background:rgba(176,139,59,0.08);color:var(--accent);padding:8px 12px;border-radius:999px;font-weight:700;font-size:13px}
+
+    .hero-right{
+      border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#fff,#fbf7ee);padding:18px;
+      display:flex;flex-direction:column;gap:12px;justify-content:center;
+    }
+    .contact-row{display:flex;gap:12px;align-items:center}
+    .contact-row .col{flex:1}
+    .profile{
+      display:flex;gap:12px;align-items:center;
+    }
+    .profile img{width:64px;height:64px;border-radius:10px;object-fit:cover;border:2px solid rgba(176,139,59,0.12)}
+    .profile .meta{font-size:14px}
+    .profile .meta strong{display:block;font-family:"Merriweather",serif;color:var(--dark)}
+
+    .cta-row{display:flex;gap:10px;margin-top:6px}
+    .btn{display:inline-block;padding:12px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{background:transparent;border:1px solid rgba(17,17,17,0.06)}
+
+    /* Sections */
+    section{margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(0,0,0,0.03);box-shadow:0 8px 22px rgba(0,0,0,0.04)}
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .section-title h2{margin:0;font-family:"Merriweather",serif}
+
+    /* Two-column blocks */
+    .grid-2{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .service-list{display:flex;flex-direction:column;gap:10px}
+    .service{padding:10px;border-radius:10px;border:1px dashed rgba(0,0,0,0.04);display:flex;gap:10px;align-items:center}
+    .service strong{font-family:"Merriweather",serif}
+
+    /* Tours / list */
+    .tour{display:flex;gap:12px;align-items:flex-start}
+    .tour img{width:120px;height:80px;border-radius:8px;object-fit:cover}
+    .tour .meta small{color:var(--muted)}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+    /* Registration form */
+    form .row{display:flex;gap:8px}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    .form-actions{text-align:right;margin-top:10px}
+
+    /* Footer */
+    footer{margin-top:28px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+
+    /* Responsive */
+    @media (max-width:940px){
+      .hero{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .gallery{grid-template-columns:1fr}
+      nav{display:none}
+      .logo{width:60px;height:60px}
+      .hero-left h1{font-size:28px}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo">TS</div>
+        <div>
+          <div style="font-family:'Merriweather',serif;font-weight:700">Travelling to Aadi Kailash</div>
+          <div style="font-size:13px;color:var(--muted)">Guided cultural & pilgrimage tours — Name Tushar Selal</div>
+        </div>
+      </a>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#tours">Tours</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#register" class="cta">Register</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main class="hero">
+      <div class="hero-left">
+        <h1>Journey to the Hill</h1>
+        <p class="lead">Explore sacred valleys, remote temples and high alpine panoramas at the India–Nepal border with local guide <strong>Nam Tushar Selal</strong>. Classic pilgrim journeys, cultural treks and comfortable local logistics.</p>
+
+        <div class="badges">
+          <div class="badge">Area: Dharchula & Pithoragarh</div>
+          <div class="badge">Special: Aadi Kailash & Om Parvat</div>
+          <div class="badge">Expertise: Archaeology · History</div>
+        </div>
+
+        <div style="margin-top:18px" class="card">
+          <div style="font-weight:700;margin-bottom:6px">Featured tour — Pithoragarh Highlights</div>
+          <div style="color:var(--muted);font-size:14px">Temples, valleys, and sacred peaks: Patal Bhuvaneshwar, Mallikarjun, Kasar Devi, Om Parvat — curated for culture & nature lovers.</div>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="profile">
+          <img src="assets/profile.jpg" alt="Name Tushar Selal — profile photo" />
+          <div class="meta">
+            <strong>Name Tushar Selal</strong>
+            <div style="color:var(--muted)">Education: Master of History · Master of Archaeology</div>
+            <div style="color:var(--muted);font-size:13px;margin-top:6px">Guide · Cultural connoisseur · Local logistics</div>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="col card">
+            <div style="font-weight:700">Contact</div>
+            <div style="font-size:14px;color:var(--muted);margin-top:6px">
+              Mobile: <a href="tel:+919411557001">+91 94115 57001</a><br/>
+              WhatsApp: <a href="https://wa.me/917466869546" target="_blank">+91 74668 69546</a><br/>
+              Email: <a href="mailto:rubbisingh46@gmail.com">rubbisingh46@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="col card" style="display:flex;flex-direction:column;gap:8px;justify-content:center">
+            <div style="font-weight:700">Social</div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+              <a href="https://instagram.com/Tushu_selal" target="_blank" style="text-decoration:none;color:var(--muted)">Instagram ⸱ @Tushu_selal</a>
+            </div>
+            <div><a href="https://facebook.com/Tushar.selal" target="_blank" style="text-decoration:none;color:var(--muted)">Facebook ⸱ Tushar selal</a></div>
+          </div>
+        </div>
+
+        <div class="cta-row" style="margin-top:6px">
+          <a class="btn btn-primary" href="#register">Book / Register</a>
+          <a class="btn btn-ghost" href="#tours">See tours</a>
+        </div>
+      </aside>
+    </main>
+
+    <!-- ABOUT / PERSONAL INTRO -->
+    <section id="about" class="card">
+      <div class="section-title">
+        <h2>Personal Introduction</h2>
+      </div>
+      <div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <p style="margin-top:0;color:var(--muted)">
+            Hello — I'm <strong>Nam Tushar Selal</strong>, a historian and archaeologist turned guide. With deep roots in the Dharchula–Pithoragarh region and years of experience leading cultural and pilgrimage journeys, I curate safe, meaningful, and comfortable trips to temples, valleys and alpine shrines. My background in history and archaeology brings richer context to every visit.
+          </p>
+
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Education: Master of History; Master in Archaeology</li>
+            <li>Languages: Hindi, Kumaoni, English</li>
+            <li>Services: Local guide, hotel booking, restaurant recommendations & vehicle logistics</li>
+          </ul>
+        </div>
+
+        <div style="width:360px">
+          <div class="card">
+            <div style="font-weight:700">Quick details</div>
+            <div style="color:var(--muted);margin-top:8px">Areas served: Dharchula (Nepal border), Didihat, Pithoragarh, Almora, Panchachuli & Aadi Kailash routes.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="grid-2">
+      <div class="card">
+        <div class="section-title"><h2>Guides · Hotels · Restaurants · Vehicles</h2></div>
+
+        <div class="service-list">
+          <div class="service">
+            <div>
+              <strong>Guiding</strong>
+              <div style="color:var(--muted);font-size:13px">Guided cultural tours, temple histories, archaeology insights, safe trekking guidance.</div>
+            </div>
+          </div>
+
+          <div class="service">
+            <div>
+              <strong>Hotels & Stays</strong>
+              <div style="color:var(--muted);font-size:13px">Curated stays from heritage cottages to comfortable hotels — pre-booking and check-in help.</div>
+            </div>
+          </div>
+
+          <div class="service">
+            <div>
+              <strong>Restaurants & Food</strong>
+              <div style="color:var(--muted);font-size:13px">Local cuisine, hygienic family restaurants, and recommended vegetarian & non-veg options.</div>
+            </div>
+          </div>
+
+          <div class="service">
+            <div>
+              <strong>Vehicles</strong>
+              <div style="color:var(--muted);font-size:13px">Local vehicles (safari/jeep) with experienced drivers for mountain roads.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="card">
+        <div class="section-title"><h2>Registration Corner</h2></div>
+        <form id="registration" action="#" onsubmit="event.preventDefault(); alert('Registration submitted — we will contact you!');">
+          <div class="row" style="margin-bottom:8px">
+            <input name="name" placeholder="Full name" required />
+          </div>
+          <div class="row" style="margin-bottom:8px">
+            <input name="phone" placeholder="Phone (e.g. +91 9XXXXXXXXX)" required />
+          </div>
+          <div style="margin-bottom:8px">
+            <input name="email" placeholder="Email" />
+          </div>
+          <div style="margin-bottom:8px">
+            <select name="tour">
+              <option value="">Select tour / area</option>
+              <option>Pithoragarh highlights</option>
+              <option>Dharchula & Aadi Kailash</option>
+              <option>Almora & Kasar Devi</option>
+              <option>Custom itinerary</option>
+            </select>
+          </div>
+          <div style="margin-bottom:8px">
+            <textarea name="notes" placeholder="Message / preferences (dates, group size, accommodation)"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Submit Registration</button>
+          </div>
+        </form>
+      </aside>
+    </section>
+
+    <!-- TOURS -->
+    <section id="tours">
+      <div class="section-title"><h2>Tours & Places</h2></div>
+      <div class="card" style="display:flex;flex-direction:column;gap:12px">
+        <!-- Dharchula -->
+        <div class="tour">
+          <img src="C:\Users\ADMIN\Desktop\IMG-20251120-WA0035.jpg" alt="Dharchula" />
+          <div>
+            <div style="font-weight:700">Dharchula — Nepal border</div>
+            <div class="meta"><small style="color:var(--muted)">Borderland culture, riverside villages, gateway for alpine routes.</small></div>
+            <div style="color:var(--muted);margin-top:6px">Ideal for cultural immersion and as a base for higher treks toward Aadi Kailash & Om Parvat.</div>
+          </div>
+        </div>
+
+        <!-- Didihat -->
+        <div class="tour">
+          <img src="C:\Users\ADMIN\Desktop\IMG-20251120-WA0011.jpg" alt="Didihat Sirakot temple" />
+          <div>
+            <div style="font-weight:700">Didihat — Sirakot Temple</div>
+            <div class="meta"><small style="color:var(--muted)">Historic temple visits, local festivals.</small></div>
+            <div style="color:var(--muted);margin-top:6px">Short halts to experience local rituals and panoramic hill views.</div>
+          </div>
+        </div>
+
+        <!-- Askot -->
+        <div class="tour">
+          <img src="C:\Users\ADMIN\Desktop\IMG-20251120-WA0030.jpg" alt="Askot Mallikarjun" />
+          <div>
+            <div style="font-weight:700">Askot — Mallikarjun Dev Temple</div>
+            <div class="meta"><small style="color:var(--muted)">Pilgrim shrine with rich oral history.</small></div>
+          </div>
+        </div>
+
+        <!-- Pithoragarh -->
+        <div class="tour">
+          <img src="C:\Users\ADMIN\Desktop\IMG-20251120-WA0016.jpg" alt="Patal Bhuvaneshwar" />
+          <div>
+            <div style="font-weight:700">Pithoragarh — Patal Bhuvaneshwar</div>
+            <div class="meta"><small style="color:var(--muted)">Sacred caves and shrine complex.</small></div>
+            <div style="color:var(--muted);margin-top:6px">A must-visit for devotees and culture seekers.</div>
+          </div>
+        </div>
+
+        <!-- Almora -->
+        <div class="tour">
+          <img src="C:\Users\ADMIN\Desktop\kasar-devi-uttarakhand-meditation-spot-260nw-2624605719.webp"alt="Almora Kasar Devi" />
+          <div>
+            <div style="font-weight:700">Almora — Golu Dev & Kasar Devi Temple</div>
+            <div class="meta"><small style="color:var(--muted)">Spiritual hilltop temples and artist hubs.</small></div>
+          </div>
+        </div>
+
+        <!-- Panchachuli / Vyas valley -->
+        <div class="tour">
+          <img src="C:\Users\ADMIN\Desktop\aadi2.jpg" alt="Panchachuli" />
+          <div>
+            <div style="font-weight:700">Panchachuli / Vyas Valley — Aadi Kailash & Om Parvat</div>
+            <div class="meta"><small style="color:var(--muted)">High alpine pilgrimage with spectacular views of sacred peaks.</small></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="card">
+      <div class="section-title"><h2>Gallery Corner</h2></div>
+      <div class="gallery">
+        <img src="C:\Users\ADMIN\Pictures\IMG-20251120-WA0005.jpg">
+        <img src="C:\Users\ADMIN\Desktop\IMG-20251120-WA0053.jpg">
+        <img src="C:\Users\ADMIN\Desktop\IMG-20251120-WA0027.jpg">
+        <img src="C:\Users\ADMIN\Desktop\IMG-20251120-WA0017.jpg">
+        <img src="C:\Users\ADMIN\Desktop\kasar-devi-uttarakhand-meditation-spot-260nw-2624605719.webp">
+        <img src="C:\Users\ADMIN\Desktop\aadi2.jpg">
+      </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer>
+      <div>
+        © <strong>Nam Tushar Selal</strong> — Journey to the Hill<br/>
+        Email: <a href="mailto:rubbisingh46@gmail.com">rubbisingh46@gmail.com</a> · Mobile: <a href="tel:+919411557001">+91 94115 57001</a>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:700">Follow</div>
+        <div style="color:var(--muted);margin-top:6px">
+          <a href="https://instagram.com/Tushu_selal" target="_blank" style="text-decoration:none;color:inherit">Instagram</a> ·
+          <a href="https://facebook.com/Tushar.selal" target="_blank" style="text-decoration:none;color:inherit">Facebook</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // lightweight enhancements (no external libs)
+    document.querySelectorAll('a[href^="https://wa.me"]').forEach(a=>{
+      a.addEventListener('click',()=>{ /* tracking hook if required */ })
+    });
+    // Simple form handler already attached inline; replace with your backend URL for real use.
+  </script>
+</body>
+</html>
